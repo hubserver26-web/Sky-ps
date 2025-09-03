@@ -1,0 +1,159 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>Sky Private Server — FINAL</title><link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Luckiest Guy',cursive;
+  color:#d0e7ff;
+  background:url('https://i.imgur.com/decJMdY.jpeg') no-repeat center center fixed;
+  background-size:cover;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.3),rgba(0,0,0,.6));
+  pointer-events:none;z-index:-1;
+}
+.wrap{max-width:1060px;margin:28px auto;padding:0 16px}
+.card{
+  background:rgba(0,0,0,.55);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:18px;padding:22px;
+  margin-bottom:18px;
+  box-shadow:0 10px 25px rgba(0,0,0,.35);
+  transform:translateY(30px);opacity:0;
+  transition:transform .7s ease,opacity .7s ease;
+}
+.card.show{transform:translateY(0);opacity:1}
+.card:hover{box-shadow:0 14px 40px rgba(0,0,0,.45)}
+.logo{width:300px;max-width:86%;border-radius:16px;display:block;margin:0 auto}
+h1{
+  font-size:44px;text-align:center;color:#00c3ff;
+  text-shadow:0 0 8px #00ffff,2px 2px 0 #000;
+}
+.section-title{
+  font-size:28px;margin-bottom:10px;color:#3ecbff;text-shadow:0 0 6px #00e1ff,1px 1px 0 #000;
+  text-align:center;
+}
+.grid{display:grid;gap:18px}
+.grid-4{grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.dl-card{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:14px;border-radius:16px;text-align:center;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+  color:#fff;text-decoration:none;
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.dl-card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 15px rgba(0,195,255,.6);
+}
+.dl-card .icon{font-size:28px}
+.dl-card .label{margin-top:6px;letter-spacing:1px}
+.accordion{border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.1)}
+.ac-head{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:14px 16px;background:rgba(255,255,255,.08);
+  cursor:pointer;font-size:20px;color:#3ecbff;
+}
+.ac-body{max-height:0;overflow:hidden;transition:max-height .45s ease;background:rgba(0,0,0,.35)}
+.ac-body-inner{padding:14px 16px 16px}
+.ul-dot,.ul-arrow{list-style:none;padding-left:0}
+.ul-dot li,.ul-arrow li{margin:8px 0;position:relative;padding-left:20px;line-height:1.6}
+.ul-dot li::before{content:"•";position:absolute;left:0;color:#00e1ff}
+.ul-arrow li::before{content:">";position:absolute;left:0;color:#fff}
+.s-btn{
+  display:flex;align-items:center;gap:10px;padding:12px 14px;border-radius:14px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);
+  color:#fff;text-decoration:none;transition:transform .2s ease,background .2s ease;
+}
+.s-btn:hover{transform:translateY(-3px);background:rgba(255,255,255,.14)}
+.footer{text-align:center;opacity:.85;font-size:14px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="card header">
+    <img src="https://i.imgur.com/NfXz2NI.png" class="logo" alt="SKY Logo">
+    <h1>Sky Private Server</h1>
+  </section>  <section class="card show">
+    <div class="section-title">Link Host & Config</div>
+    <div class="grid grid-4">
+      <a class="dl-card" href="https://skyhosting.lol/iOS" target="_blank">
+        <div class="icon">⚪</div><div class="label">iOS CONFIG</div></a>
+      <a class="dl-card" href="https://skyhosting.lol/ptunnel.txt" target="_blank">
+        <div class="icon">🔴</div><div class="label">PTUNNEL</div></a>
+      <a class="dl-card" href="https://www.mediafire.com/file/moft4lnp36rs5eg/SKY-PS.txt/file" target="_blank">
+        <div class="icon">🟢</div><div class="label">VHOST</div></a>
+      <div class="dl-card" style="cursor:default"><div class="icon">💻</div><div class="label">PC / LAPTOP</div></div>
+    </div>
+    <div style="margin-top:10px;text-align:center">
+      <b>103.42.116.171 growtopia1.com</b><br>
+      <b>103.42.116.171 growtopia2.com</b>
+    </div>
+  </section>  <section class="card accordion">
+    <div class="ac-head">Rules <span>▾</span></div>
+    <div class="ac-body"><div class="ac-body-inner">
+      <ul class="ul-dot">
+        <li>Hormati semua player & admin</li>
+        <li>Dilarang toxic, scam, spam</li>
+        <li>Dilarang promosi GTPS lain</li>
+        <li>Laporkan bug segera</li>
+      </ul>
+      <ul class="ul-arrow">
+        <li>> Gunakan bahasa sopan</li>
+        <li>> Transaksi hanya via admin</li>
+      </ul>
+    </div></div>
+  </section>  <section class="card accordion">
+    <div class="ac-head">Price List <span>▾</span></div>
+    <div class="ac-body"><div class="ac-body-inner">
+      <ul class="ul-dot">
+        <li><b>Moderator</b>: Rp60K • <b>SMOD</b>: Rp80K • <b>DEV</b>: Rp120K</li>
+        <li><b>/CSN</b>: Rp100K • <b>/BUY</b>: Rp150K</li>
+        <li><b>Blue Name</b>: Rp20K • <b>Legendary Title</b>: Rp20K</li>
+      </ul>
+    </div></div>
+  </section>  <section class="card accordion">
+    <div class="ac-head">Tutorial <span>▾</span></div>
+    <div class="ac-body"><div class="ac-body-inner">
+      <div class="section-title" style="font-size:20px">iOS</div>
+      <ul class="ul-arrow">
+        <li>> Download iOS Config lalu import ke P-Tunnel</li>
+        <li>> Klik Connect dan tes koneksi</li>
+      </ul>
+      <div class="section-title" style="font-size:20px">PC / Laptop</div>
+      <ul class="ul-arrow">
+        <li>> Tambahkan host di file system</li>
+        <li>> Flush DNS dan jalankan game</li>
+      </ul>
+    </div></div>
+  </section>  <section class="card">
+    <div class="section-title">Komunitas</div>
+    <a class="s-btn" href="https://chat.whatsapp.com/HT8lkwnem6RABB1MX8ASPw?mode=ems_copy_t" target="_blank">WhatsApp</a>
+    <a class="s-btn" href="https://discord.gg/H3Zu2Bpr" target="_blank">Discord</a>
+  </section>  <section class="card footer">
+    <p>&copy; 2025 Sky Private Server • Owner: Onizuka • Fei • Sujin</p>
+  </section>
+</div><script>
+const cards=document.querySelectorAll('.card');
+const io=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})
+},{threshold:.1});
+cards.forEach(c=>io.observe(c));
+
+document.querySelectorAll('.accordion').forEach(acc=>{
+  const head=acc.querySelector('.ac-head');
+  const body=acc.querySelector('.ac-body');
+  head.addEventListener('click',()=>{
+    acc.classList.toggle('open');
+    if(acc.classList.contains('open')){body.style.maxHeight=body.scrollHeight+'px';}
+    else{body.style.maxHeight='0px';}
+  });
+});
+</script></body>
+</html>
